@@ -1,0 +1,4 @@
+{
+    // VS Code soovitab selle laienduse paigaldada, kui kaust avatakse.
+    "recommendations": ["ms-vscode.cpptools"]
+}

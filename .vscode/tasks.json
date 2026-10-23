@@ -1,0 +1,31 @@
+{
+    // VS Code'i ülesanded: Ctrl+Shift+B kompileerib ja käivitab testid.
+    "version": "2.0.0",
+    "tasks": [
+        {
+            // Kompileerib mõlemad .c failid üheks programmiks (silumisinfoga -g).
+            "label": "Kompileeri",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-std=c99", "-g", "-O0",
+                "-Wall", "-Wextra", "-Wpedantic",
+                "-o", "test_Sbr",
+                "Sbr.c", "test_Sbr.c"
+            ],
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            // Kompileerib ja käivitab testid. Vaikimisi ülesanne: Ctrl+Shift+B.
+            "label": "Kompileeri ja käivita",
+            "type": "shell",
+            "command": "./test_Sbr",
+            "windows": { "command": ".\\test_Sbr.exe" },
+            "options": { "cwd": "${workspaceFolder}" },
+            "dependsOn": "Kompileeri",
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": []
+        }
+    ]
+}

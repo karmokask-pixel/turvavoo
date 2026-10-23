@@ -1,0 +1,24 @@
+{
+    // IntelliSense'i seadistus: C99 standard ja kompilaatori asukoht.
+    "configurations": [
+        {
+            "name": "Win32",
+            "compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+            "cStandard": "c99",
+            "includePath": ["${workspaceFolder}/**"]
+        },
+        {
+            "name": "Mac",
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c99",
+            "includePath": ["${workspaceFolder}/**"]
+        },
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c99",
+            "includePath": ["${workspaceFolder}/**"]
+        }
+    ],
+    "version": 4
+}

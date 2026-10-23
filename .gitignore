@@ -1,0 +1,10 @@
+# Kompileeritud programmid
+test_Sbr
+test_Sbr_cov
+*.exe
+*.o
+
+# Katvuse failid (gcov)
+*.gcda
+*.gcno
+*.gcov
